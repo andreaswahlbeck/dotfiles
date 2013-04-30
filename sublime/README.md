@@ -1,5 +1,11 @@
 # Common files for Sublime
 
+## Setup before
+follow https://github.com/mhartl/rails_tutorial_sublime_text
+
+fix reindent:
+http://stackoverflow.com/questions/9495007/indenting-code-in-sublime-text-2
+
 ## Files
 
 ### MacOS X
