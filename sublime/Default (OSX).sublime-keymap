@@ -1,0 +1,5 @@
+[
+  { "keys": ["ctrl+shift+b"], "command": "open_browser" },
+  { "keys": ["ctrl+shift+."], "command": "erb" },
+  { "keys": ["ctrl+shift+r"], "command": "reindent", "args": {"single_line": false} }
+]

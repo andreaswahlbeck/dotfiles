@@ -1,0 +1,18 @@
+{
+	"installed_packages":
+	[
+		"CoffeeScript",
+		"ERB Insert and Toggle Commands",
+		"GitGutter",
+		"Guard",
+		"Haml",
+		"Package Control",
+		"Rails Related Files",
+		"RailsCasts Colour Scheme",
+		"RSpec",
+		"Ruby on Rails snippets",
+		"RubyTest",
+		"SASS",
+		"Sass"
+	]
+}
