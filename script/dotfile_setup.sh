@@ -12,7 +12,6 @@ else
   ln -sf $CWD/gitconfig ~/.gitconfig
 fi
 
-exit
 
 # sublime files
 if [ `uname` == "Darwin" ]
