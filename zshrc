@@ -42,6 +42,7 @@ setopt interactivecomments
 # HISTORY
 #unsetopt inc_append_history
 unsetopt share_history
+unsetopt correct
 
 
 PATH=$HOME/bin:$HOME/scripts
@@ -54,3 +55,5 @@ PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH
 
 [[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
+
+[[ -s "~/.nvm/nvm.sh" ]] && source "~/.nvm/nvm.sh" # This loads NVM
