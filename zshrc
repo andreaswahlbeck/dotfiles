@@ -54,6 +54,6 @@ PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 
 export PATH
 
-[[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
+[[ -s "~/.rvm/scripts/rvm" ]] && source ~/.rvm/scripts/rvm
 
-[[ -s "~/.nvm/nvm.sh" ]] && source "~/.nvm/nvm.sh" # This loads NVM
+[[ -s "~/.nvm/nvm.sh" ]] && source ~/.nvm/nvm.sh # This loads NVM
