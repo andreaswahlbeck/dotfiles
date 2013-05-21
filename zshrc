@@ -44,6 +44,8 @@ setopt interactivecomments
 unsetopt share_history
 unsetopt correct_all
 
+[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
+[[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh # This loads NVM
 
 PATH=$HOME/bin:$HOME/scripts
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
@@ -54,6 +56,3 @@ PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 
 export PATH
 
-[[ -s "~/.rvm/scripts/rvm" ]] && source ~/.rvm/scripts/rvm
-
-[[ -s "~/.nvm/nvm.sh" ]] && source ~/.nvm/nvm.sh # This loads NVM
