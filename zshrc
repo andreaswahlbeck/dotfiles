@@ -49,7 +49,7 @@ unsetopt correct_all
 
 PATH=$HOME/bin:$HOME/scripts
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:$HOME/node_modules/.bin
+PATH=$PATH:./node_modules/.bin:$HOME/node_modules/.bin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/heroku/bin
 PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
