@@ -1,19 +1,24 @@
 {
 	"installed_packages":
 	[
+		"All Autocomplete",
 		"CoffeeScript",
 		"ERB Insert and Toggle Commands",
 		"GitGutter",
 		"Guard",
 		"Haml",
 		"Package Control",
+		"Pylinter",
 		"Rails Related Files",
 		"RailsCasts Colour Scheme",
 		"RSpec",
 		"Ruby on Rails snippets",
+		"RubyFormat",
 		"RubyTest",
 		"Sass",
 		"SASS",
-		"SendText"
+		"SendText",
+		"SideBarEnhancements",
+		"SublimeCodeIntel"
 	]
 }
