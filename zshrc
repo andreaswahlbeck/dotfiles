@@ -56,6 +56,7 @@ PATH=$PATH:./node_modules/.bin:$HOME/node_modules/.bin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/heroku/bin
 PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
+PATH=$PATH:/usr/local/share/python
 
 export PATH
 
