@@ -15,7 +15,7 @@ ZSH_THEME="robbyrussell"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+ DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -32,9 +32,9 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails rails3 rails4 ruby rvm git vagrant brew capistrano heroku node osx coffee postgres powder sublime python pip virtualenv)
+plugins=(rails rails3 rails4 ruby rbenv git vagrant brew capistrano heroku node osx coffee postgres powder sublime python pip virtualenv)
 
-export LC_ALL=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 source $ZSH/oh-my-zsh.sh
@@ -47,11 +47,11 @@ setopt interactivecomments
 unsetopt share_history
 unsetopt correct_all
 
-[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
+#[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 [[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh # This loads NVM
 
 PATH=$HOME/bin:$HOME/scripts
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=$PATH:./node_modules/.bin:$HOME/node_modules/.bin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/heroku/bin
@@ -59,4 +59,6 @@ PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 PATH=$PATH:/usr/local/share/python
 
 export PATH
+
+eval "$(rbenv init -)"
 
