@@ -11,7 +11,7 @@
 		"Guard",
 		"Haml",
 		"Package Control",
-		"Pylinter",
+		"Python PEP8 Autoformat",
 		"Rails Related Files",
 		"RailsCasts Colour Scheme",
 		"RSpec",
@@ -23,6 +23,7 @@
 		"Sass",
 		"SendText",
 		"SideBarEnhancements",
-		"SublimeCodeIntel"
+		"SublimeCodeIntel",
+		"SublimeLinter"
 	]
 }
