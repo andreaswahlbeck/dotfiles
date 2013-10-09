@@ -47,6 +47,10 @@ setopt interactivecomments
 unsetopt share_history
 unsetopt correct_all
 
+# aliases
+alias ql='qlmanage -p 2>/dev/null'
+alias pywebsrv='python -m SimpleHTTPServer'
+
 #[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
 [[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh # This loads NVM
 
