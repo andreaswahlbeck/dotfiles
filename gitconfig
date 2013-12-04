@@ -6,7 +6,7 @@
 	editor = vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 #[mergetool "sourcetree"]
 #	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 # trustExitCode = true
@@ -39,3 +39,6 @@
   hack = !CURRENT=$(git branch | grep '*' | awk '{print $2}') && git checkout develop && git pull origin develop && git checkout $CURRENT && git rebase develop
   ship = !CURRENT=$(git branch | grep '*' | awk '{print $2}') && git checkout develop && git merge $CURRENT && git push origin develop && git checkout $CURRENT
   wc = whatchanged -p --abbrev-commit --pretty=medium
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
