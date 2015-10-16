@@ -53,17 +53,24 @@ alias pywebsrv='python -m SimpleHTTPServer'
 alias se='. ~/.env'
 
 #[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
-[[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh # This loads NVM
+#[[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh # This loads NVM
+
+#export GOROOT="/usr/local/Cellar/go/1.4.2"
+export GOPATH="$HOME/projects/go"
 
 PATH=$HOME/bin:$HOME/scripts
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-PATH=$PATH:./node_modules/.bin:$HOME/node_modules/.bin
+#PATH=$PATH:./node_modules/.bin:$HOME/node_modules/.bin
+PATH=$HOME/.ndenv/bin:$PATH
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/heroku/bin
+PATH=$PATH:$GOPATH/bin
 PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin
 PATH=$PATH:/usr/local/share/python
 
 export PATH
 
+
 eval "$(rbenv init -)"
+eval "$(ndenv init -)"
 
