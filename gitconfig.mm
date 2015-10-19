@@ -1,6 +1,6 @@
 [user]
-	email = andreas.svanberg@mittmedia.se
-	name = Andreas Svanberg
+	email = andreas.wahlbeck@mittmedia.se
+	name = Andreas Wahlbeck
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = vim
