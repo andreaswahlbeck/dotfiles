@@ -1,0 +1,5 @@
+ln -sv "$HOME/dotfiles/.gitignore_global" "$HOME/.gitignore_global"
+ln -sv "$HOME/dotfiles/.bash_git_aliases" "$HOME/.bash_git_aliases"
+ln -sv "$HOME/dotfiles/.bashrc" "$HOME/.bashrc"
+ln -sv "$HOME/dotfiles/.bash_profile" "$HOME/.bash_profile"
+ln -sv "$HOME/dotfiles/" "$HOME/"
