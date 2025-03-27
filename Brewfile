@@ -1,8 +1,6 @@
 cask_args appdir: "/Applications"
 
 tap "hashicorp/tap"
-tap "homebrew/bundle"
-tap "homebrew/cask"
 
 brew "act"
 brew "bash"
