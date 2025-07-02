@@ -46,3 +46,4 @@
 [commit]
 	# template = /Users/andreas.wahlbeck/.stCommitMsg
 	gpgsign = true
+	template = /Users/andreas.wahlbeck/.stCommitMsg

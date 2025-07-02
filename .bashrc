@@ -45,3 +45,6 @@ fi
 
 # miscc
 # eval $(sf autocomplete script bash)
+
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export JAVA_HOME=`/usr/libexec/java_home -v 23`
