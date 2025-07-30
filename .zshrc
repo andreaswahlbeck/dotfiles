@@ -26,7 +26,7 @@ source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ### ZSH Completions
 # export ZSH_DISABLE_COMPFIX="true"
-fpath=($ZSH_PLUGINS/plugins/zsh-completions/src $fpath)
+fpath=($ZSH_PLUGINS/zsh-completions/src $fpath)
 # for brew zsh completions
 # if type brew &>/dev/null; then
 #     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
@@ -56,18 +56,12 @@ SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
 # aliases
-if [ -e $HOME/dotfiles/.zsh_aliases ]; then
-  source $HOME/dotfiles/.zsh_aliases
-fi
-if [ -e $HOME/dotfiles/.zsh_git_aliases ]; then
-  source $HOME/dotfiles/.zsh_git_aliases
-fi
-if [ -e $HOME/.cargo/env ]; then
-  source "$HOME/.cargo/env"
-fi
-if [ -f '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc' ]; then
-  source '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc'
-fi
-if [ -f '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc' ]; then
-  source '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'
-fi
+[ -e $HOME/dotfiles/.zsh_aliases ] && source $HOME/dotfiles/.zsh_aliases
+[ -e $HOME/dotfiles/.zsh_git_aliases ] && source $HOME/dotfiles/.zsh_git_aliases
+
+# init tools
+[ -e $HOME/.cargo/env ] && source "$HOME/.cargo/env"
+[ -f '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc' ] && source '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc'
+[ -f '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc' ] && source '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && source "/opt/homebrew/opt/nvm/nvm.sh" # This loads nvm
