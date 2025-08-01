@@ -1,6 +1,8 @@
 # Website shortcuts
-alias gcp='open "https://console.cloud.google.com/welcome?authuser=1"'
+alias gcpc='open "https://console.cloud.google.com/welcome?authuser=1"'
 
+alias gcpa='gcloud auth login --update-adc'
+alias tsnode='node --import=tsx'
 
 alias timecurl='curl --silent --show-error --location --output /dev/null \
     --write-out "\n\
