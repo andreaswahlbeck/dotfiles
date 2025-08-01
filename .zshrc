@@ -1,4 +1,4 @@
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/opt/openjdk/bin:$PATH"
 
 ### ZSH stuff
 export ZSH_PLUGINS=~/.zsh_local_gitclones/plugins
