@@ -1,0 +1,92 @@
+{
+  "files.autoSave": "onFocusChange",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "git.confirmSync": false,
+  "chat.tools.terminal.autoApprove": {
+    "npm run lint": true,
+    "npm run build": true,
+    "npm test": true,
+    "npm run dev": true,
+    "npx eslint --fix assets/scripts/snake.js": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "npm start": true,
+    "npx eslint --fix assets/scripts/space-invaders.js": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "node --test --no-warnings --import='./test/setup.js' './test/features/update.js'": {
+      "approve": true,
+      "matchCommandLine": true
+    }
+  },
+  "docker.extension.enableComposeLanguageServer": false,
+  "chat.mcp.gallery.enabled": true,
+  "http.systemCertificatesNode": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "chat.viewSessions.orientation": "stacked",
+  "workbench.layoutControl.enabled": false,
+  "workbench.experimental.share.enabled": true,
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "default",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "prettier.enable": false,
+  "isort.interpreter": [
+    "/opt/homebrew/bin/python3"
+  ],
+  "google.cloud.project": "context-prod-k7jw",
+  "jupyter.runStartupCommands": [
+    "import bigframes",
+    "%load_ext bigframes",
+    "bigframes.options.bigquery.project = \"context-prod-k7jw\"",
+    "bigframes.options.bigquery.application_name = \"datacloud.visual studio code\""
+  ],
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml"
+  ]
+}

@@ -1,5 +1,5 @@
 [user]
-	email = andreas.wahlbeck@mittmedia.se
+	email = ante.svanberg@gmail.com
 	name = Andreas Wahlbeck
 [core]
 	excludesfile = ~/.gitignore_global

@@ -1,4 +1,14 @@
-export PATH="/opt/homebrew/bin:/opt/homebrew/opt/openjdk/bin:$PATH"
+# OPENSPEC:START
+# OpenSpec shell completions configuration
+fpath=("$HOME/.zsh/completions" $fpath)
+autoload -Uz compinit
+compinit
+# OPENSPEC:END
+
+#export PATH="/opt/homebrew/bin:/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="~/bin:/opt/homebrew/bin:$PATH"
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
+export PATH="$HOME/.local/bin:$PATH"
 
 ### ZSH stuff
 export ZSH_PLUGINS=~/.zsh_local_gitclones/plugins
@@ -17,6 +27,9 @@ setopt HIST_IGNORE_ALL_DUPS
 
 # History won't show duplicates on search.
 setopt HIST_FIND_NO_DUPS
+
+# fzf history
+command -v fzf &>/dev/null && source <(fzf --zsh)
 
 ### ---- PLUGINS & THEMES -----------------------------------
 source $ZSH_THEMES/spaceship-prompt/spaceship.zsh-theme
@@ -65,3 +78,5 @@ SPACESHIP_CHAR_SUFFIX=" "
 [ -f '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc' ] && source '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && source "/opt/homebrew/opt/nvm/nvm.sh" # This loads nvm
+# set JAVA_HOME to jvm in Android Studio
+/usr/libexec/java_home -v 21.0.6 &>/dev/null && export JAVA_HOME=$(/usr/libexec/java_home -v 21.0.6)
